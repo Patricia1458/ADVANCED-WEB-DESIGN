@@ -1,61 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog Registration Form</title>
+  <title>About Me - My Blog</title>
 </head>
 <body>
-  <h2>Register for Our Blog</h2>
-  <form action="/submit-form" method="post">
-    
-    <fieldset>
-      <legend>Personal Information</legend>
 
-      <label for="fullname">Full Name:</label>
-      <input type="text" id="fullname" name="fullname" required><br><br>
+  <header>
+    <h1>Welcome to My Blog</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About Me</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="register.html">Register</a>
+    </nav>
+    <hr>
+  </header>
 
-      <label for="gender">Gender:</label>
-      <select id="gender" name="gender" required>
-        <option value="">--Select--</option>
-        <option value="female">Female</option>
-        <option value="male">Male</option>
-        <option value="nonbinary">Non-binary</option>
-        <option value="prefer_not">Prefer not to say</option>
-      </select><br><br>
+  <main>
+    <article>
+      <h2>About Me</h2>
+      <p>Hey there! 👋 I'm [Your Name], a curious mind who loves writing, learning new things, and sharing thoughts with the world.</p>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br><br>
+      <p>I started this blog to express myself, connect with others, and talk about topics I love — from technology and psychology to books, life, and the little things in between.</p>
 
-      <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
-      <small>Format: 1234567890</small><br><br>
+      <p>When I'm not typing away, you'll probably find me reading, watching something interesting, or just enjoying a peaceful moment with music.</p>
 
-    </fieldset>
+      <p>This blog is my little digital home, and I’m really glad you stopped by. 💻📖✨</p>
 
-    <fieldset>
-      <legend>Location</legend>
+      <!-- ✅ Register link -->
+      <p><strong><a href="register.html">Click here to register and join my blog!</a></strong></p>
+    </article>
 
-      <label for="country">Country:</label>
-      <input list="countries" id="country" name="country" required>
-      <datalist id="countries">
-        <option value="United States">
-        <option value="Canada">
-        <option value="United Kingdom">
-        <option value="India">
-        <option value="Australia">
-      </datalist><br><br>
-    </fieldset>
+    <section>
+      <h3>Fun Facts</h3>
+      <ul>
+        <li>I read over 100 books last year 📚</li>
+        <li>I enjoy deep conversations more than small talk 🧠</li>
+        <li>I’m passionate about cybersecurity and AI 🔐🤖</li>
+        <li>Coffee + quiet mornings = heaven ☕</li>
+      </ul>
+    </section>
+  </main>
 
-    <fieldset>
-      <legend>Account Preferences</legend>
+  <footer>
+    <hr>
+    <p>&copy; 2025 My Blog | Written with love.</p>
+  </footer>
 
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required><br><br>
-
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required><br><br>
-    </fieldset>
-
-    <input type="submit" value="Register">
-  </form>
 </body>
 </html>
