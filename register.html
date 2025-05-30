@@ -1,1 +1,62 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog Registration Form</title>
+</head>
+<body>
+  <h2>Register for Our Blog</h2>
+  <form action="/submit-form" method="post">
+    
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required><br><br>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">--Select--</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="nonbinary">Non-binary</option>
+        <option value="prefer_not">Prefer not to say</option>
+      </select><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+      <small>Format: 1234567890</small><br><br>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Location</legend>
+
+      <label for="country">Country:</label>
+      <input list="countries" id="country" name="country" required>
+      <datalist id="countries">
+        <option value="United States">
+        <option value="Canada">
+        <option value="United Kingdom">
+        <option value="India">
+        <option value="Australia">
+      </datalist><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Account Preferences</legend>
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+    </fieldset>
+
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
